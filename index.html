@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .email-body {
+                height: 80%;
+                width: 100%;
+                /* background-color: #eee; */
+            }
+            header {
+                height: 10%;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .email-content {
+                /* height: 80%; */
+                padding: 30px;
+            }
+
+            footer {
+                background-color: rgba(21, 50, 58, 0.9);
+                color: white;
+                padding: 10px;
+                text-align: center;
+                bottom: 0;
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body>
+
+    <div class="email-body">
+        <header>
+            <img src="https://asiapacificjournals.org/static/img/logo.png" height="50px">
+        </header>
+        <div class="email-content">
+            <p style="margin-bottom: 3px;">Dear {{reciever}},</p>
+            <p>{{message}}</p>
+            <br>
+            <p>Regards, </p>
+            <p>Yahya-Imam Munir Kolapo (PhD)</p>
+
+        </div>
+        <footer>
+            <small>Wisma Lincoln, No. 12-18, Jalan SS 6/12, 47301 Petaling Jaya, Selangor Darul Ehsan, Malaysia.</small>
+        </footer>
+    </div>
+
+</body>
+
+</html>
